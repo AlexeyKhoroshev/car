@@ -1,0 +1,25 @@
+body {
+  background: silver;
+}
+
+.tireHover {fill:#464655}
+.tireHover:hover {fill:#538e7c!important}
+
+svg{
+  transition: all 2s;
+  position: relative;
+  left: 0px;
+}
+
+#spoiler {
+  animation:  3s spoilerMove ease-in-out infinite;
+
+}
+
+@keyframes spoilerMove {
+  0%   {transform:translateX(0px) }
+	25%  {transform:rotate(5grad); fill:orange;}
+	50%  {transform:translateX(0px);}
+	75%  {transform:translateX(10px);}
+	100% {transform:translateX(0px);}
+}
